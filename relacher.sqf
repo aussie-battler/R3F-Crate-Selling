@@ -3,7 +3,7 @@
 	Complete with Crate Selling logs for infiSTAR called "CRATEDUMP".
 **/
 
-private _useInfiSTAR = true;			//Set to true if you use infiSTAR AND it's logging features. This creates a log in your log folder called CRATEDUMP
+private _useInfiSTAR = false;			//Set to true if you use infiSTAR AND it's logging features. This creates a log in your log folder called CRATEDUMP
 
 if (R3F_LOG_mutex_local_verrou) then
 {

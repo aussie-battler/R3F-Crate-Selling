@@ -1,2 +1,12 @@
 # R3F-Crate-Selling
 Crate Selling scripts for R3F and Exile. Complete with infiSTAR logging functionality.
+
+Origional Script found here: http://www.exilemod.com/topic/19038-sell-crates-at-wastedump-r3f-required/
+My version, adds the pop tabs to the player, updates the player's respect and deletes the crate from the world.
+Deleting the crate prevents other players from taking the money.
+
+Replace the mpmission.mapname.pbo\R3F_LOG\objet_deplacable\relacher.sqf with the one proveded here.
+
+If you use infiSTAR set _useInfiSTAR to true and pack the "gadd_extras" folder into a PBO and drop it into your @ExileServer\addons folder.
+
+If you do not use infiSTAR, simply replace the file specified and start the server up again.

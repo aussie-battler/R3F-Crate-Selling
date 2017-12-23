@@ -16,7 +16,7 @@ else
 	private _foundTrader = false;
 	{
 		_foundTrader = true;
-	} forEach nearestObjects [player, ["Exile_Trader_WasteDump"], 12];
+	} forEach nearestObjects [player, ["Exile_Trader_WasteDump"], 12]; //Distance to WasteDump Trader. Default is 12m.
 
 	if (_foundTrader) then {
 		
@@ -26,9 +26,9 @@ else
 		private _crate = R3F_LOG_joueur_deplace_objet;
 		private _cargo = _crate call ExileClient_util_containerCargo_list;	
 		private _revenue = _cargo call ExileClient_util_gear_calculateTotalSellPrice;
-		private _convenience = 0.9;
+		private _convenience = 0.9;			// This takes a 10% fee from the player for convenience of dumping the contents of the crate rather than selling the items seperately. default is 0.9
 		private _newrevenue = _revenue*_convenience;
-		private _revrespect = ((_newrevenue/10)*0.8);
+		private _revrespect = ((_newrevenue/10)*0.8);	// To prevent players getting hella respect, and also a penalty kind of. It takes 20% further off of the total respect earned. Default is 0.8.
 		private _percentage = (100-(_convenience*100));
 		
 		clearWeaponCargoGlobal 		_crate;

@@ -10,3 +10,6 @@ Replace the mpmission.mapname.pbo\R3F_LOG\objet_deplacable\relacher.sqf with the
 If you use infiSTAR set _useInfiSTAR to true and pack the "gadd_extras" folder into a PBO and drop it into your @ExileServer\addons folder.
 
 If you do not use infiSTAR, simply replace the file specified and start the server up again.
+
+Configure everything else how you want it. Configurable things have comments next to them. DO NOT EDIT ANYTHING ELSE UNLESS YOU KNOW
+WHAT YOU ARE DOING!!!!!!

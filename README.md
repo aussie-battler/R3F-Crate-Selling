@@ -7,9 +7,9 @@ Deleting the crate prevents other players from taking the money.
 
 Replace the mpmission.mapname.pbo\R3F_LOG\objet_deplacable\relacher.sqf with the one proveded here.
 
-If you use infiSTAR set _useInfiSTAR to true and pack the "gadd_extras" folder into a PBO and drop it into your @ExileServer\addons folder.
+Pack the gadd_extras folder into a PBO and drop it into your @ExileServer\addons folder.
 
-If you do not use infiSTAR, simply replace the file specified and start the server up again.
+If you use infiSTAR set _useInfiSTAR to true in relacher.sqf.
 
 Configure everything else how you want it. Configurable things have comments next to them. DO NOT EDIT ANYTHING ELSE UNLESS YOU KNOW
 WHAT YOU ARE DOING!!!!!!

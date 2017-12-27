@@ -51,7 +51,7 @@ else
 		ExileClientPlayerScore = _addedRes;  
 		(owner _target) publicVariableClient 'ExileClientPlayerScore';  
 		
-		R3FCrateSale = [_targetUID, _addedRev, _addedRed];
+		R3FCrateSale = [_targetUID, _addedRev, _addedRes];
 		publicVariableServer "R3FCrateSale";
 			
 		[format["<t size='30' font='OrbitronMedium' color='#00fff6'>Crate Contents Sold!</t><br />    

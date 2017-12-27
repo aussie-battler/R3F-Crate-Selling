@@ -10,3 +10,4 @@ If you try call compile and it all goes to shit, use execvm =P
 diag_log "Starting GADD Custom Content PBO";
 
 call compile preprocessFileLineNumbers "\x\addons\gadd_extras\ExtraScripts\CrateLogger.sqf";
+call compile preprocessFileLineNumbers "\x\addons\gadd_extras\ExtraScripts\PlayerUpdate.sqf";

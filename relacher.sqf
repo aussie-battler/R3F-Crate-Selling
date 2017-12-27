@@ -50,9 +50,9 @@ else
 		_target setVariable['PLAYER_STATS_VAR',[_target getVariable ['ExileMoney', 0],_addedRes],true];  
 		ExileClientPlayerScore = _addedRes;  
 		(owner _target) publicVariableClient 'ExileClientPlayerScore';  
-			
-		format['setPlayerMoney:%1:%2', _addedRev, (_targetUID)] call ExileServer_system_database_query_fireAndForget;
-		format['setAccountScore:%1:%2', _addedRes, (_targetUID)] call ExileServer_system_database_query_fireAndForget; 
+		
+		R3FCrateSale = [_targetUID, _addedRev, _addedRed];
+		publicVariableServer "R3FCrateSale";
 			
 		[format["<t size='30' font='OrbitronMedium' color='#00fff6'>Crate Contents Sold!</t><br />    
 		<t size='24' font='PuristaMedium' color='#10ff00'>+%1<img image='\exile_assets\texture\ui\poptab_inline_ca.paa' size='24'/><br/>

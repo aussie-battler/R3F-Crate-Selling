@@ -1,3 +1,7 @@
+/**
+	Crate Sale logger Script by [GADD]Monkeynutz for R3F Crate Selling & infiSTAR (Required)
+**/
+
 if(isServer) then 
 {
     "CrateLogger" addPublicVariableEventHandler

@@ -1,10 +1,12 @@
-   if(isServer) then 
+/**
+	Update Player Script by [GADD]Monkeynutz for R3F Crate Selling
+**/
+
+if(isServer) then 
 {
     "R3FCrateSale" addPublicVariableEventHandler
     {
-        params["_message","_data"];
-        _data params["_targetUID","_addedRev","_addedRes"];
-        format['setPlayerMoney:%1:%2', _addedRev, (_targetUID)] call ExileServer_system_database_query_fireAndForget;
-	format['setAccountScore:%1:%2', _addedRes, (_targetUID)] call ExileServer_system_database_query_fireAndForget;
+        format["setPlayerMoney:%1:%2", ((_this select 1) select 2), ((_this select 1) select 0) getVariable ["ExileDatabaseID", 0]] call ExileServer_system_database_query_fireAndForget;
+        format['setAccountScore:%1:%2', ((_this select 1) select 3), ((_this select 1) select 1)] call ExileServer_system_database_query_fireAndForget;
     };
 };
